@@ -1,0 +1,35 @@
+.inputBox{
+    position: relative;
+    margin-top: 20px;
+    label,input{
+        display: block;
+        color: rgb(24, 2, 58);
+    }
+    label{
+        margin-bottom:7px;
+        font-weight: bold;
+    }
+    input{
+        padding: 10px;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        font-size: 13px;
+        font-weight: bold;
+        &:focus{
+            outline: none;
+        }
+        &::placeholder{
+            font-style: italic;
+        }
+    }
+    p.error{
+        color: red;
+        font-size: 12px;
+        font-weight: bold;
+
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+}
