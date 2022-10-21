@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.073c9b0a.css",
-    "main.js": "/my-app/static/js/main.f0c9762c.js",
-    "static/js/787.139f9f0d.chunk.js": "/my-app/static/js/787.139f9f0d.chunk.js",
-    "static/media/logo.svg": "/my-app/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/my-app/index.html",
-    "main.073c9b0a.css.map": "/my-app/static/css/main.073c9b0a.css.map",
-    "main.f0c9762c.js.map": "/my-app/static/js/main.f0c9762c.js.map",
-    "787.139f9f0d.chunk.js.map": "/my-app/static/js/787.139f9f0d.chunk.js.map"
+    "main.css": "/palitra-test/static/css/main.14a9c668.css",
+    "main.js": "/palitra-test/static/js/main.e172683a.js",
+    "static/js/787.139f9f0d.chunk.js": "/palitra-test/static/js/787.139f9f0d.chunk.js",
+    "index.html": "/palitra-test/index.html",
+    "main.14a9c668.css.map": "/palitra-test/static/css/main.14a9c668.css.map",
+    "main.e172683a.js.map": "/palitra-test/static/js/main.e172683a.js.map",
+    "787.139f9f0d.chunk.js.map": "/palitra-test/static/js/787.139f9f0d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.f0c9762c.js"
+    "static/css/main.14a9c668.css",
+    "static/js/main.e172683a.js"
   ]
 }
