@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import Form from '../Components/Form'
 import Input from '../Components/Input'
 import Button from '../Components/Button'
-import { checkUser, createUser } from '../LocalStorage'
+import { checkUser, createUser, logIn } from '../LocalStorage'
 export default function Register() {
     let form = useRef()
     let navigate = useNavigate()
@@ -63,7 +63,8 @@ export default function Register() {
         }
         if(valid === 5){
             createUser(name,surname,email,password)
-            navigate('/palitra-test/home')
+            logIn(email)
+            navigate('/palitra-test/post')
         }
     }
     return (

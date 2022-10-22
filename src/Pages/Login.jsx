@@ -30,7 +30,7 @@ export default function Login() {
             return false;
         }
         if (checkLogin(email, password)) {
-            navigate('/palitra-test/home')
+            navigate('/palitra-test/post')
             logIn(email);
         } else {
             

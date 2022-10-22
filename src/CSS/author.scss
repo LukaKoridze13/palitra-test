@@ -1,0 +1,40 @@
+.author {
+    width: 90vw;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 auto;
+
+    align-items: flex-start;
+    gap: 15px;
+
+
+    
+
+}
+.card {
+    margin-top: 20px;
+    width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 1px solid white;
+
+    h2 {
+        display: none;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+    }
+
+    p {
+        color: rgb(190, 102, 102);
+        text-decoration: underline;
+        width: fit-content;
+        cursor: pointer;
+    }
+}

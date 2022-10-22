@@ -7,12 +7,16 @@ body{
     min-height: 100vh;
     background-color: rgba(24, 2, 58);
     font-family: 'Roboto', sans-serif;
+    padding: 50px;
 }
-
+*{
+    box-sizing: border-box;
+}
 // Global Classes
 .centerY {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .center {
@@ -30,5 +34,16 @@ body{
 }
 
 button{
+    cursor: pointer;
+}
+
+.logout{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 15px;
+    background-color: rgb(147, 135, 135);
+    border-radius: 10px;
+    border: none;
     cursor: pointer;
 }

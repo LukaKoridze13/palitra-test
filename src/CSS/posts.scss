@@ -1,0 +1,46 @@
+.posts {
+    width: 100%;
+    padding: 50px;
+
+    .box {
+        width: 100%;
+        max-width: 700px;
+        background-color: rgb(127, 182, 255);
+        margin: 0 auto;
+        padding: 60px;
+        border-radius: 20px;
+        gap: 20px;
+
+        .card {
+            width: 100%;
+            padding-bottom: 15px;
+            border-bottom: 1px solid white;
+
+            h2 {
+                font-size: 14px;
+                margin-bottom: 10px;
+                span{
+                    font-size: 17px;
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+
+            h1 {
+                font-size: 20px;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            p{
+                color: rgb(190, 102, 102);
+                text-decoration: underline;
+                width: fit-content;
+                cursor: pointer;
+            }
+        }
+    }
+}
+#cardh2{
+    display: block;
+}
