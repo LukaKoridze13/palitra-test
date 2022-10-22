@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import '../CSS/poster.scss'
 export default function Post() {
   let { id } = useParams()
@@ -13,6 +13,7 @@ export default function Post() {
   const [num, setNum] = useState(2)
   const [shown, setShown] = useState(0)
   let ref = useRef()
+  let navigate = useNavigate()
   async function fetcher() {
     let posta;
     await fetch('https://jsonplaceholder.typicode.com/posts').then(res => res.json()).then(json => {
@@ -39,7 +40,7 @@ export default function Post() {
     if (po.y + po.height < window.innerHeight + 30) {
       setShow(show + 1)
       setShown(shown + 1)
-      window.history.replaceState(null, null,  show);
+      window.history.replaceState(null, null, show);
     }
   }
 
@@ -53,7 +54,7 @@ export default function Post() {
         document.removeEventListener('scroll', scroll)
       }
     })
-  },[show,])
+  }, [show,])
   return (
     <>
       {comments === 'no' ? <h1 style={{ color: 'white' }}>Loading...</h1> : <div className='poster'>
@@ -93,21 +94,21 @@ export default function Post() {
                   <h1>{post.title.toUpperCase()}</h1>
                   <h6 style={{ marginTop: '15px' }}>{post.body}</h6>
                   <p style={{ marginTop: '20px', fontWeight: 'bold' }}>
-                    From: {author.name} | {author.email}
+                    From: {author.username}
                   </p>
                   <div className="comments">
                     <p style={{ marginTop: '30px' }}>Comments:</p>
                     {com.map((c, index) => {
-                      if (index + 1 <= num) {
+                      if (index + 1 <= 2) {
                         return <p key={c.email} style={{ margin: '10px 0px', border: '2px solid black', padding: '10px', width: '100%' }}>Title: -<span style={{ fontWeight: 'bold' }}>{c.name}</span> - {c.body} - <span style={{ fontWeight: 'bold' }}>From: {c.email}</span></p>
                       } else {
                         return false
                       }
                     })}
-                    {/* <p style={{ cursor: 'pointer' }} onClick={() => { navigate(`/palitra-test/post/${post.id}`)}}>Go to details</p> */}
+                    <a href={`https://lukakoridze13.github.io/palitra-test/post/1${post.id}`} style={{ cursor: 'pointer' }}>Go to details</a>
                   </div>
                 </div>
-              }else{
+              } else {
                 return false
               }
             })
